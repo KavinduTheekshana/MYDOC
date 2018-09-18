@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppoinmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </CalendarView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_fealild_creative"
+                android:drawableLeft="@drawable/ic_doctor"
+                android:drawablePadding="20dp"
+                android:hint="Doctor Name"
+                android:inputType="textPassword"
+                android:paddingBottom="12dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="12dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+            <AutoCompleteTextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/autoCompleteTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_fealild_creative"
+                android:drawableLeft="@drawable/ic_stethoscope"
+                android:drawablePadding="20dp"
+                android:hint="Speciality"
+                android:inputType="textPassword"
+                android:paddingBottom="12dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="12dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+            <AutoCompleteTextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/autoCompleteTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_fealild_creative"
+                android:drawableLeft="@drawable/ic_hospital"
+                android:drawablePadding="20dp"
+                android:hint="Hospital"
+                android:inputType="textPassword"
+                android:paddingBottom="12dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="12dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+            <Button
+                android:id="@+id/btnlogin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:background="@drawable/round_btn"
+                android:text="Book Now"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
